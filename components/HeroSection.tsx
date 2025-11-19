@@ -71,7 +71,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, scale: 0.8, x: 100 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
-          transition={{ delay: 1.2, duration: 0.8, type: "spring" }}
+          transition={{ delay: 1.2, duration: 0.8, type: "spring" as const }}
           className="flex justify-center md:justify-end items-center"
         >
           <motion.div

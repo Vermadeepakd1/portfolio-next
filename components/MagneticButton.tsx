@@ -46,7 +46,7 @@ export default function MagneticButton({
   const content = (
     <motion.div
       animate={{ x: position.x, y: position.y }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      transition={{ type: "spring" as const, stiffness: 300, damping: 20 }}
       className="relative z-10"
     >
       {children}
