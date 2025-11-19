@@ -29,7 +29,7 @@ export default function SmoothScroll({ children }: SmoothScrollProps) {
         infinite: false,
       }}
     >
-      {children}
+      {children as any}
     </ReactLenis>
   );
 }
